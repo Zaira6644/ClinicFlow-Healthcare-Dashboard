@@ -1,6 +1,9 @@
+
 import { supabase } from "./lib/supabaseClient";
 import { useEffect, useMemo, useState } from "react";
 import "./App.css";
+import safexLogo from "./assets/safex-logo.png";
+import safexIcon from "./assets/safex-icon.jpeg";
 
 const INITIAL_TASKS = [
   { title: "Patient Records Audit", description: "Review and update patient documentation", priority: "High", department: "Clinical Operations", assignee: "Sarah Khan", dueDate: "2026-09-02", status: "Completed", createdAt: "2026-08-31T08:00:00" },
@@ -242,7 +245,7 @@ function LoginPage() {
 
         <div className="login-brand">
           <img
-            src="/src/assets/safex-logo.png"
+            src={safexLogo}
             alt="SAFEX Solutions"
             className="login-logo"
           />
@@ -1573,7 +1576,7 @@ function App() {
         <div className="sidebar-brand">
 
           <img
-            src="/src/assets/safex-logo.png"
+            src={safexLogo}
             alt="SAFEX Solutions"
             className="sidebar-logo"
           />
@@ -1635,7 +1638,7 @@ function App() {
           <div className="profile">
 
             <img
-              src="/src/assets/safex-icon.jpeg"
+              src={safexIcon}
               alt={currentUser.name}
               className="profile-avatar"
             />
@@ -2102,4 +2105,3 @@ function App() {
 }
 
 export default App;
-
